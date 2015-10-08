@@ -1,0 +1,12 @@
+<ul>
+  {{#each model as |post|}}
+    <li>
+      {{post.title}}
+      {{#link-to 'posts.show' post}}
+        show
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}
